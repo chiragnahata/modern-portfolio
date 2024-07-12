@@ -32,12 +32,12 @@ const serviceData = [
   {
     Icon: RxReader,
     title: "Social Media Marketing and Management",
-    description: "Crafting effective social media strategies, managing online presence, and boosting brand awareness through targeted campaigns and content creation.",
+    description: "Crafting effective social media strategies, managing online presence, and boosting brand awareness.",
   },
   {
     Icon: RxRocket,
-    title: "E-commerce Development",
-    description: "Designing and developing scalable and secure e-commerce platforms to help you reach a wider audience and drive online sales.",
+    title: "Content Creation",
+    description: "Creating captivating and tailored content across platforms to engage and inspire audience.",
   },
 ];
 
