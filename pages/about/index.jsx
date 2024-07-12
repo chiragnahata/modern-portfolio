@@ -3,11 +3,10 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import {
   FaCss3,
-  FaFigma,
+  FaPython,
   FaHtml5,
   FaJs,
   FaReact,
-  FaWordpress,
 } from "react-icons/fa";
 import {
   SiAdobephotoshop,
@@ -32,14 +31,12 @@ export const aboutData = [
           FaCss3,
           FaJs,
           FaReact,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
+          FaPython
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
+        icons: [SiAdobephotoshop],
       },
     ],
   },
@@ -60,16 +57,36 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Frontend Developer - CodeAplha",
+        stage: "July 2024 - Present",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Full Stack Development Intern, Campus Ambassador & Tech Defenders Club President - CyberDojo : The School of CyberDefense",
+        stage: "May 2024 - Present",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Co-Founder & CEO - Digidenone",
+        stage: "April 2024 - Present",
+      },
+      {
+        title: "Founder & Team Laeder - Team codeARC",
+        stage: "December 2023 - Present",
+      },
+      {
+        title: "Internshala Student Partner - Internshala",
+        stage: "June 2024 - July 2024",
+      },
+      {
+        title: "Sales & Marketing Intern - Skill Academia",
+        stage: "May 2024 - June 2024",
+      },
+      {
+        title: "Internship on Machine Learning - Centre For Advanced Computer Learning and Development | CACLD",
+        stage: "Febuary 2024 - March 2024",
+      },
+      {
+        title: "Digital Marketing Course Trainer - GANDHI INSTITUTE FOR TECHNOLOGY[GIFT] , BHUBANESWAR",
+        stage: "Febuary 2024 - March 2024",
       },
     ],
   },
@@ -77,16 +94,28 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "CCSF Course Completion Badge - CyberDojo : The School of CyberDefense",
+        stage: "April 2024",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Certificate of Achievement - The Dark Pattern Busters Hackathon 2023 - Indian Institute of Technology (Banaras Hindu University), Varanasi",
+        stage: "March 2024",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Certificate of Participation in HackForge : Forging the Future of Srijan 2024 - Unstop",
+        stage: "March 2024",
+      },
+      {
+        title: "2nd Runner Up Track 3 Certificate of Appreciation, Trithon Trident 2023, Bhubheswar - Trident Groups of Institutions",
+        stage: "December 2023",
+      },
+      {
+        title: "JISTech 2K23 : 1st Position in App-E-Teaser Competition - JIS College of Engineering",
+        stage: "November 2023",
+      },
+      {
+        title: "SSIP Gujarat Hackthon 2023 Regional Round Participation Certificate - SSIP Gujarat",
+        stage: "November 2023",
       },
     ],
   },
@@ -129,9 +158,7 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I begin freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collabrated on digital products for business and consumer use.
+            I'm Chirag Nahata, a passionate Full Stack Developer and entrepreneur driven by a relentless pursuit of innovation. I have a knack for crafting robust software, I thrive on creating impactful digital experiences. As the founder of Digidenone and Team codeARC, I'm dedicated to pushing the boundaries of technology and fostering growth through collaborative projects. Let's connect and explore how we can shape the future together through code and creativity.
           </motion.p>
 
           {/* counters */}
@@ -145,27 +172,27 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />
+                  <CountUp start={0} end={2} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience.
                 </div>
               </div>
 
-              {/* clients */}
+              {/* hackathons */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
+                  <CountUp start={0} end={6} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients.
+                  Hackathons Participated.
                 </div>
               </div>
 
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
+                  <CountUp start={0} end={12} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects.
@@ -175,7 +202,7 @@ const About = () => {
               {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
+                  <CountUp start={0} end={2} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Winning awards.
