@@ -16,28 +16,28 @@ import "swiper/css/pagination";
 const serviceData = [
   {
     Icon: RxCrop,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Web Development",
+    description: "Creating visually appealing, responsive, and functional websites, ensuring a seamless user experience across all devices..",
   },
   {
     Icon: RxPencil2,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Software Development",
+    description: "Building customized software solutions to streamline operations, improve efficiency.",
   },
   {
     Icon: RxDesktop,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "IT Solutions",
+    description: "Offering a wide range of IT services, including freelance work, server management, and technical support to optimize your business operations",
   },
   {
     Icon: RxReader,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Social Media Marketing and Management",
+    description: "Crafting effective social media strategies, managing online presence, and boosting brand awareness through targeted campaigns and content creation.",
   },
   {
     Icon: RxRocket,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "E-commerce Development",
+    description: "Designing and developing scalable and secure e-commerce platforms to help you reach a wider audience and drive online sales.",
   },
 ];
 
