@@ -62,7 +62,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
           {/* ResumeDownloadHireMe */}
-          <div className="flex flex-col items-center justify-center space-y-4 mt-8">
+          <div className="flex justify-center space-x-4 mt-8">
             <button
               onClick={handleDownloadResume}
               className="bg-blue-500 text-white px-6 py-3 rounded-full shadow-lg transform transition-transform hover:scale-105 hover:bg-blue-600"
