@@ -51,7 +51,6 @@ export const aboutData = [
         title: "2nd Runner Up Track 3 Certificate of Appreciation, Trithon Trident 2023, Bhubheswar - Rs 12500 ",
         stage: "December 2023",
       },
-      },
     ],
   },
   {
