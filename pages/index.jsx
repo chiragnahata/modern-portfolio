@@ -1,12 +1,22 @@
 import { motion } from "framer-motion";
-
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
-
 import { fadeIn } from "../variants";
 
 const Home = () => {
+  const handleDownloadResume = () => {
+    // Replace with the actual path to your resume file
+    const resumeUrl = '/path/to/your/resume.pdf';
+    window.open(resumeUrl, '_blank');
+  };
+
+  const handleHireMe = () => {
+    // Replace with the actual link to your hire me page or email
+    const hireMeUrl = 'mailto:your-email@example.com';
+    window.location.href = hireMeUrl;
+  };
+
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
