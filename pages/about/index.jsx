@@ -47,6 +47,10 @@ export const aboutData = [
         title: "JISTech 2K23 - 1st Position in App-E-Teaser Competition",
         stage: "November 2023",
       },
+      {
+        title: "2nd Runner Up Track 3 Certificate of Appreciation, Trithon Trident 2023, Bhubheswar - Rs 12500 ",
+        stage: "December 2023",
+      },
       },
     ],
   },
