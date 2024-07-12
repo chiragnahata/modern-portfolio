@@ -32,10 +32,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+            Hello there! 👋 I'm Chirag Nahata, a versatile developer on a perpetual journey of coding exploration. 
+            From crafting robust software solutions to diving into the latest technologies, my work is a canvas reflecting my passion for innovation. 
+            As a Full Stack Developer, Hackathon Enthusiast, Founder of Team codeARC and Digidenone, Entrepreneur, and Researcher, I bring a blend of creativity, efficiency, and commitment to lifelong learning. 
+            Join me in the exciting world of code, where every project tells a story of growth and collaboration.
           </motion.p>
 
           {/* btn */}
