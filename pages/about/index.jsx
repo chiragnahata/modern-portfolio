@@ -44,12 +44,9 @@ export const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "JISTech 2K23 - 1st Position in App-E-Teaser Competition",
+        stage: "November 2023",
       },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
       },
     ],
   },
