@@ -31,8 +31,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              I offer comprehensive solutions. With a focus on innovation and efficiency, I strive to deliver solutions that enhance digital presence, streamline operations, and drive business growth.
             </motion.p>
           </div>
 
