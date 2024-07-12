@@ -32,10 +32,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Hello there! 👋 I'm Chirag Nahata, a versatile developer on a perpetual journey of coding exploration. 
-            From crafting robust software solutions to diving into the latest technologies, my work is a canvas reflecting my passion for innovation. 
-            As a Full Stack Developer, Hackathon Enthusiast, Founder of Team codeARC and Digidenone, Entrepreneur, and Researcher, I bring a blend of creativity, efficiency, and commitment to lifelong learning. 
-            Join me in the exciting world of code, where every project tells a story of growth and collaboration.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
+            exercitationem harum, quia nulla temporibus deleniti libero veniam
+            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
+            quod laudantium debitis.
           </motion.p>
 
           {/* btn */}
@@ -51,6 +51,21 @@ const Home = () => {
           >
             <ProjectsBtn />
           </motion.div>
+          {/* ResumeDownloadHireMe */}
+          <div className="flex flex-col items-center justify-center space-y-4 mt-8">
+            <button
+              onClick={handleDownloadResume}
+              className="bg-blue-500 text-white px-6 py-3 rounded-full shadow-lg transform transition-transform hover:scale-105 hover:bg-blue-600"
+            >
+              Download CV
+            </button>
+            <button
+              onClick={handleHireMe}
+              className="bg-green-500 text-white px-6 py-3 rounded-full shadow-lg transform transition-transform hover:scale-105 hover:bg-green-600"
+            >
+              Hire Me
+            </button>
+          </div>
         </div>
       </div>
       {/* image */}
