@@ -1,129 +1,38 @@
-import { motion } from "framer-motion";
-import { BsArrowRight, BsDownload } from "react-icons/bs";
-import { fadeIn } from "../../variants";
-import { useState } from "react";
+import nodemailer from 'nodemailer';
 
-const Contact = () => {
-  const [isLoading, setIsLoading] = useState(false);
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const { name, email, subject, message } = req.body;
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setIsLoading(true);
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => alert("Thank you. I will get back to you ASAP."))
-      .catch((error) => console.log(error))
-      .finally(() => setIsLoading(false));
-  };
+    const transporter = nodemailer.createTransport({
+      host: process.env.EMAIL_HOST,
+      port: process.env.EMAIL_PORT,
+      secure: process.env.EMAIL_SECURE === 'true',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
 
-  return (
-    <div className="h-full bg-primary/30">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-        {/* text & form */}
-        <div className="flex flex-col w-full max-w-[700px]">
-          {/* text */}
-          <motion.h2
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h2 text-center mb-12"
-          >
-            Let's <span className="text-accent">connect.</span>
-          </motion.h2>
-          {/* form */}
-          <motion.form
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
-            onSubmit={handleSubmit}
-            autoComplete="off"
-            autoCapitalize="off"
-            data-netlify="true"
-          >
-            {/* input group */}
-            <div className="flex gap-x-6 w-full">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                className="input"
-                disabled={isLoading}
-                aria-disabled={isLoading}
-                required
-                aria-required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                className="input"
-                disabled={isLoading}
-                aria-disabled={isLoading}
-                required
-                aria-required
-              />
-            </div>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              className="input"
-              disabled={isLoading}
-              aria-disabled={isLoading}
-              required
-              aria-required
-            />
-            <textarea
-              name="message"
-              placeholder="Message..."
-              className="textarea"
-              disabled={isLoading}
-              aria-disabled={isLoading}
-              required
-              aria-required
-            />
-            <div className="flex gap-x-4 justify-center xl:justify-start">
-              <button
-                type="submit"
-                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
-                disabled={isLoading}
-                aria-disabled={isLoading}
-              >
-                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                  Let's talk
-                </span>
-                <BsArrowRight
-                  className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
-                  aria-hidden
-                />
-              </button>
-              
-                href="/path-to-your-cv.pdf" // Replace with the actual path to your CV
-                download
-                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
-              >
-                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                  Download CV
-                </span>
-                <BsDownload
-                  className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
-                  aria-hidden
-                />
-              </a>
-            </div>
-          </motion.form>
-        </div>
-      </div>
-    </div>
-  );
-};
+    try {
+      await transporter.sendMail({
+        from: `"Contact Form" <${process.env.EMAIL_FROM}>`,
+        to: process.env.EMAIL_TO,
+        subject: `New message from ${name}: ${subject}`,
+        text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+        html: `<p><strong>Name:</strong> ${name}</p>
+               <p><strong>Email:</strong> ${email}</p>
+               <p><strong>Message:</strong></p>
+               <p>${message}</p>`,
+      });
 
-export default Contact;
+      res.status(200).json({ message: 'Email sent successfully' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({ message: 'Failed to send email' });
+    }
+  } else {
+    res.setHeader('Allow', ['POST']);
+    res.status(405).end(`Method ${req.method} Not Allowed`);
+  }
+}
