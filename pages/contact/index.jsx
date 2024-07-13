@@ -97,24 +97,24 @@ const Contact = () => {
                 disabled={isLoading}
                 aria-disabled={isLoading}
               >
-                <span className="group-hover:opacity-0 transition-all duration-500">
+                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                   Let&apos;s talk
                 </span>
                 <BsArrowRight
-                  className="opacity-0 group-hover:flex group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+                  className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
                   aria-hidden="true"
                 />
               </button>
               <a
                 href="/path-to-your-cv.pdf"
                 download
-                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group relative"
+                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
               >
-                <span className="absolute left-0 right-0 top-0 bottom-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300">
+                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                   Download CV
                 </span>
                 <BsDownload
-                  className="opacity-0 group-hover:flex group-hover:opacity-100 transition-all duration-300 absolute text-[22px] inset-0"
+                  className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
                   aria-hidden="true"
                 />
               </a>
