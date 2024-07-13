@@ -10,10 +10,10 @@ import "swiper/css/pagination";
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
+    name: "Snigdha",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Chirag Nahata possesses a remarkable aptitude for coding, consistently demonstrating proficiency in various programming languages. He not only excels in understanding complex algorithms and data structures but also exhibits a strong problem-solving ability, often finding innovative solutions to challenging programming tasks. In addition to his technical skills, Chirag is a proactive learner who actively seeks out new challenges and opportunities for growth. He eagerly engages in coding competitions, hackathons, and open-source projects, showcasing his commitment to continuous improvement and collaboration within the coding community. Moreover, Chirag is an effective communicator and team player/team leader, capable of articulating technical concepts clearly and collaborating seamlessly with peers to achieve project goals.",
   },
   {
     image: "/t-avt-2.png",
