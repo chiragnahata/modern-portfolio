@@ -16,14 +16,14 @@ const testimonialData = [
       "Chirag Nahata excels in coding, solving complex problems, and actively engages in competitions and open-source projects, showcasing growth and teamwork.",
   },
   {
-    image: "/t-avt-2.png",
+    image: "/Sitanath.png",
     name: "Dr. Sitanath Biswas",
     position: "Teacher/Mentor",
     message:
       "He is one of the brightest students, I have seen in my career. He has diverse skill set including web development, AI, ML etc. I strongly recommend him as a potential candidate for internship.",
   },
   {
-    image: "/t-avt-3.png",
+    image: "/Shamonnoy.png",
     name: "Shamonnoy Halder",
     position: "Friend",
     message:
