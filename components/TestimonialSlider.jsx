@@ -30,7 +30,7 @@ const testimonialData = [
       "Chirag is a very curious person in the field of learning and implementing something.",
   },
   {
-    image: "/t-avt-4.png",
+    image: "/Bidipta.png",
     name: "Bidipta Ghosh",
     position: "Friend",
     message:
