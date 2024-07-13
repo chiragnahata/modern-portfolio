@@ -31,7 +31,7 @@ export const aboutData = [
           FaCss3,
           FaJs,
           FaReact,
-          FaPython
+          FaPython,
         ],
       },
       {
@@ -48,7 +48,7 @@ export const aboutData = [
         stage: "November 2023",
       },
       {
-        title: "2nd Runner Up Track 3 Certificate of Appreciation, Trithon Trident 2023, Bhubheswar - Rs 12500 ",
+        title: "2nd Runner Up Track 3 Certificate of Appreciation, Trithon Trident 2023, Bhubheswar - Rs 12500",
         stage: "December 2023",
       },
     ],
@@ -69,7 +69,7 @@ export const aboutData = [
         stage: "April 2024 - Present",
       },
       {
-        title: "Founder & Team Laeder - Team codeARC",
+        title: "Founder & Team Leader - Team codeARC",
         stage: "December 2023 - Present",
       },
       {
@@ -82,11 +82,11 @@ export const aboutData = [
       },
       {
         title: "Internship on Machine Learning - Centre For Advanced Computer Learning and Development | CACLD",
-        stage: "Febuary 2024 - March 2024",
+        stage: "February 2024 - March 2024",
       },
       {
         title: "Digital Marketing Course Trainer - GANDHI INSTITUTE FOR TECHNOLOGY[GIFT] , BHUBANESWAR",
-        stage: "Febuary 2024 - March 2024",
+        stage: "February 2024 - March 2024",
       },
     ],
   },
@@ -135,7 +135,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-primary/30 py-32 text-center xl:text-left overflow-hidden">
+    <div className={`min-h-screen bg-primary/30 py-32 text-center xl:text-left overflow-hidden ${isMobile ? 'mobile-scrollable' : ''}`}>
       <Circles />
 
       {/* avatar img */}
