@@ -18,7 +18,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-primary/60 min-h-screen overflow-y-auto md:overflow-y-hidden">
+    <div className="bg-primary/60 min-h-screen relative overflow-hidden">
       {/* Header (only for mobile) */}
       {isMobile && (
         <header className="bg-primary/80 backdrop-blur-sm p-4 sticky top-0 z-50">
@@ -27,7 +27,7 @@ const Home = () => {
       )}
 
       {/* Main content */}
-      <div className="w-full min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+      <div className="w-full min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10 relative z-10">
         <div className="text-center flex flex-col justify-center pt-20 md:pt-40 px-4 md:px-0 md:text-left h-full container mx-auto">
           {/* Title */}
           <motion.h1
@@ -68,32 +68,32 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Image and particles (hidden on mobile) */}
-      {!isMobile && (
-        <div className="w-full md:w-[1280px] h-full absolute right-0 bottom-0 pointer-events-none">
-          {/* Background image */}
-          <div
-            role="img"
-            className="hidden md:block bg-explosion bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
-            aria-hidden
-          />
+      {/* Background elements */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none">
+        {/* Background image */}
+        <div
+          role="img"
+          className="bg-explosion bg-cover bg-center md:bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 opacity-30 md:opacity-100"
+          aria-hidden
+        />
 
-          {/* Particles */}
+        {/* Particles */}
+        <div className="absolute inset-0">
           <ParticlesContainer />
-
-          {/* Avatar */}
-          <motion.div
-            variants={fadeIn("up", 0.5)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            transition={{ duration: 1, ease: "easeInOut" }}
-            className="hidden md:block w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
-          >
-            <Avatar />
-          </motion.div>
         </div>
-      )}
+
+        {/* Avatar */}
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute bottom-0 right-0 md:-bottom-32 lg:bottom-0 lg:right-[8%]"
+        >
+          <Avatar />
+        </motion.div>
+      </div>
     </div>
   );
 };
