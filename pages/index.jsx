@@ -4,6 +4,8 @@ import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import { fadeIn } from "../variants";
+import Logo from "../components/Logo";
+import Socials from "../components/Socials";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,16 +21,17 @@ const Home = () => {
 
   return (
     <div className="bg-primary/60 min-h-screen relative overflow-hidden">
-      {/* Header (only for mobile) */}
-      {isMobile && (
-        <header className="bg-primary/80 backdrop-blur-sm p-4 sticky top-0 z-50">
-          <h1 className="text-2xl font-bold text-white">Chirag Nahata</h1>
-        </header>
-      )}
+      {/* Header */}
+      <header className="absolute top-0 left-0 w-full z-50 p-4">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+          <Logo />
+          <Socials />
+        </div>
+      </header>
 
       {/* Main content */}
       <div className="w-full min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10 relative z-10">
-        <div className="text-center flex flex-col justify-center pt-20 md:pt-40 px-4 md:px-0 md:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center pt-32 md:pt-40 px-4 md:px-0 md:text-left h-full container mx-auto">
           {/* Title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}
@@ -89,7 +92,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute bottom-0 right-0 md:-bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 right-0 lg:bottom-0 lg:right-[8%]"
         >
           <Avatar />
         </motion.div>
