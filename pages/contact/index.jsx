@@ -6,48 +6,27 @@ import { useState } from "react";
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
-
-    try {
-      let response;
-      if (process.env.NEXT_PUBLIC_NETLIFY) {
-        // Netlify form submission
-        response = await fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        });
-      } else {
-        // Custom server API endpoint
-        response = await fetch("/api/send-email", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        });
-      }
-
-      if (response.ok) {
-        alert("Thank you. I will get back to you ASAP.");
-        event.target.reset();
-      } else {
-        throw new Error("Failed to send message");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Failed to send message. Please try again later.");
-    } finally {
-      setIsLoading(false);
-    }
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert("Thank you. I will get back to you ASAP."))
+      .catch((error) => console.log(error))
+      .finally(() => setIsLoading(false));
   };
 
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+        {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
+          {/* text */}
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -57,6 +36,7 @@ const Contact = () => {
           >
             Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
+          {/* form */}
           <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"
@@ -66,8 +46,9 @@ const Contact = () => {
             onSubmit={handleSubmit}
             autoComplete="off"
             autoCapitalize="off"
-            data-netlify={process.env.NEXT_PUBLIC_NETLIFY ? "true" : null}
+            data-netlify="true"
           >
+            {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input
                 type="text"
