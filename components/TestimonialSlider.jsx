@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
+    image: "/Snigdha.png",
     name: "Snigdha Ghosh",
     position: "Friend",
     message:
