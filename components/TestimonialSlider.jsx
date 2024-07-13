@@ -17,17 +17,24 @@ const testimonialData = [
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    name: "Dr. Sitanath Biswas",
+    position: "Teacher/Mentor",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "He is one of the brightest students, I have seen in my career. He has diverse skill set including web development, AI, ML etc. I strongly recommend him as a potential candidate for internship.",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    name: "Shamonnoy Halder",
+    position: "Friend",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Chirag is a very curious person in the field of learning and implementing something.",
+  },
+  {
+    image: "/t-avt-4.png",
+    name: "Bidipta Ghosh",
+    position: "Friend",
+    message:
+      "Chirag is my childhood friend. He is a very skillful boy having ideas regarding demanding computer languages in the market. He is outstanding in coding and achieves everything he makes his mind for.",
   },
 ];
 
