@@ -1,8 +1,6 @@
 <a name="readme-top"></a>
 
-# Modern Portfolio using Next.js and Framer Motion
-
-![Modern Portfolio using Next.js and Framer Motion](/.github/images/img_main.png "Modern Portfolio using Next.js and Framer Motion")
+# Chirag Nahata Portfolio
 
 [![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata "Ask Me Anything!")
 [![GitHub license](https://flat.badgen.net/github/license/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/blob/main/LICENSE "GitHub license")
@@ -23,19 +21,14 @@
 </summary>
 
 - [Folder Structure](#bangbang-folder-structure)
-- [Getting Started](#toolbox-getting-started)
-- [Screenshots](#camera-screenshots)
 - [Tech Stack](#gear-tech-stack)
 - [Stats](#wrench-stats)
 - [Contribute](#raised_hands-contribute)
 - [Acknowledgements](#gem-acknowledgements)
 - [Buy Me a Coffee](#coffee-buy-me-a-coffee)
 - [Follow Me](#rocket-follow-me)
-- [Learn More](#books-learn-more)
-- [Deploy on Vercel](#page_with_curl-deploy-on-vercel)
 - [Give A Star](#star-give-a-star)
 - [Star History](#star2-star-history)
-- [Give A Star](#star-give-a-star)
 
 </details>
 
@@ -68,26 +61,6 @@ modern-portfolio/
 ```
 
 <br />
-
-## :toolbox: Getting Started
-
-1. Make sure **Git** and **NodeJS** is installed.
-
-2. Clone this repository to your local computer.
-
-3. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
-
-4. Now app is fully configured 👍 and you can start using this app using `npm run dev` or `yarn dev`.
-
-## :camera: Screenshots:
-
-![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
-
-![Services](/.github/images/img2.png "Services")
-
-![Showcase Projects](/.github/images/img3.png "Showcase Projects")
-
-![Contact Form](/.github/images/img4.png "Contact Form")
 
 ## :gear: Tech Stack
 
@@ -136,21 +109,6 @@ Useful resources and dependencies that are used in Modern Portfolio.
 [![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/chiragnahata "Follow Me")
 [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FChiragNahata)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fchiragnahata%2Fmodern-portfolio "Tweet")
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/@ChiragNahata "Subscribe my Channel")
-
-## :books: Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## :page_with_curl: Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## :star: Give A Star
 
