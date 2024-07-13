@@ -43,18 +43,12 @@ const TestimonialSlider = () => {
               />
             </div>
 
-            {/* message */}
+            /* message */
             <div className="xl:text-lg text-center md:text-left">
-            Chirag Nahata possesses a remarkable aptitude for coding, consistently demonstrating proficiency in various programming languages. He not only excels in understanding complex algorithms and data structures but also exhibits a strong problem-solving ability, often finding innovative solutions to challenging programming tasks.
-            In addition to his technical skills, Chirag is a proactive learner who actively seeks out new challenges and opportunities for growth. He eagerly engages in coding competitions, hackathons, and open-source projects, showcasing his commitment to continuous improvement and collaboration within the coding community.
-            Moreover, Chirag is an effective communicator and team player/team leader, capable of articulating technical concepts clearly and collaborating seamlessly with peers to achieve project goals.
+              Chirag Nahata possesses a remarkable aptitude for coding, consistently demonstrating proficiency in various programming languages. He not only excels in understanding complex algorithms and data structures but also exhibits a strong problem-solving ability, often finding innovative solutions to challenging programming tasks.
+              In addition to his technical skills, Chirag is a proactive learner who actively seeks out new challenges and opportunities for growth. He eagerly engages in coding competitions, hackathons, and open-source projects, showcasing his commitment to continuous improvement and collaboration within the coding community.
+              Moreover, Chirag is an effective communicator and team player/team leader, capable of articulating technical concepts clearly and collaborating seamlessly with peers to achieve project goals.
             </div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
-          {/* avatar, name, position */}
           <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
             <div className="flex flex-col justify-center text-center">
               {/* avatar */}
