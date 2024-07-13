@@ -11,7 +11,7 @@ const testimonialData = [
   {
     image: "/t-avt-1.png",
     name: "Snigdha Ghosh",
-    position: "Customer",
+    position: "Friend",
     message:
       "Chirag Nahata excels in coding, solving complex problems, and actively engages in competitions and open-source projects, showcasing growth and teamwork.",
   },
