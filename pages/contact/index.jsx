@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { BsArrowRight } from "react-icons/bs";
-
+import { BsArrowRight, BsDownload } from "react-icons/bs";
 import { fadeIn } from "../../variants";
 import { useState } from "react";
 
@@ -10,10 +9,8 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
-
     const myForm = event.target;
     const formData = new FormData(myForm);
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -39,7 +36,6 @@ const Contact = () => {
           >
             Let's <span className="text-accent">connect.</span>
           </motion.h2>
-
           {/* form */}
           <motion.form
             variants={fadeIn("up", 0.4)}
@@ -50,7 +46,6 @@ const Contact = () => {
             onSubmit={handleSubmit}
             autoComplete="off"
             autoCapitalize="off"
-            // only needed for production (in netlify) to accept form input
             data-netlify="true"
           >
             {/* input group */}
@@ -95,21 +90,35 @@ const Contact = () => {
               required
               aria-required
             />
-            <button
-              type="submit"
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
-              disabled={isLoading}
-              aria-disabled={isLoading}
-            >
-              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let's talk
-              </span>
-
-              <BsArrowRight
-                className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
-                aria-hidden
-              />
-            </button>
+            <div className="flex gap-x-4 justify-center xl:justify-start">
+              <button
+                type="submit"
+                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+                disabled={isLoading}
+                aria-disabled={isLoading}
+              >
+                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                  Let's talk
+                </span>
+                <BsArrowRight
+                  className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+                  aria-hidden
+                />
+              </button>
+              
+                href="/path-to-your-cv.pdf" // Replace with the actual path to your CV
+                download
+                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              >
+                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                  Download CV
+                </span>
+                <BsDownload
+                  className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+                  aria-hidden
+                />
+              </a>
+            </div>
           </motion.form>
         </div>
       </div>
