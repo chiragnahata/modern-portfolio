@@ -105,8 +105,6 @@ const Contact = () => {
                   aria-hidden="true"
                 />
               </button>
-            </div>
-            <div className="flex gap-x-4 justify-center xl:justify-start">
               <a
                 href="/path-to-your-cv.pdf"
                 download
