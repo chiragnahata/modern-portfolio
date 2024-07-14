@@ -1,10 +1,33 @@
 import { motion } from "framer-motion";
 import TestimonialSlider from "../../components/TestimonialSlider";
 import { fadeIn } from "../../variants";
+import { useEffect, useState } from "react";
 
 const Testimonials = () => {
+  const [topPadding, setTopPadding] = useState(0);
+
+  useEffect(() => {
+    const updatePadding = () => {
+      const header = document.querySelector('header');
+      const socialIcons = document.querySelector('.social-icons-container');
+      if (header && socialIcons) {
+        const headerHeight = header.offsetHeight;
+        const socialIconsBottom = socialIcons.getBoundingClientRect().bottom;
+        setTopPadding(Math.max(headerHeight, socialIconsBottom) + 20); // Add 20px extra space
+      }
+    };
+
+    updatePadding();
+    window.addEventListener('resize', updatePadding);
+
+    return () => window.removeEventListener('resize', updatePadding);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-primary/30 pt-[100px] md:pt-[120px] xl:pt-32 pb-16 md:pb-24 xl:pb-32 text-center overflow-y-auto">
+    <div 
+      className="min-h-screen bg-primary/30 overflow-y-auto"
+      style={{ paddingTop: `${topPadding}px`, paddingBottom: '2rem' }}
+    >
       <div className="container mx-auto h-full flex flex-col justify-start xl:justify-center px-4 xl:px-0">
         <motion.h2
           variants={fadeIn("up", 0.2)}
