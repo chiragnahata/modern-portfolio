@@ -135,7 +135,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-primary/30 py-32 text-center xl:text-left ${isMobile ? 'mobile-scrollable' : ''}`}>
+    <div className={`min-h-screen bg-primary/30 py-32 text-center xl:text-left overflow-hidden ${isMobile ? 'mobile-scrollable' : ''}`}>
       <Circles />
 
       {/* avatar img */}
@@ -228,7 +228,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className={`flex flex-col w-full xl:max-w-[48%] ${isMobile ? 'h-[480px] overflow-y-auto' : ''}`}
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-y-auto"
         >
           <div className="flex flex-wrap gap-x-4 gap-y-2 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemI) => (
