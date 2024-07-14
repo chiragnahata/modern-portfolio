@@ -21,7 +21,7 @@ const Testimonials = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex-grow overflow-y-auto scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary"
+          className="flex-grow overflow-y-auto md:overflow-y-hidden scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary"
         >
           <TestimonialSlider />
         </motion.div>
@@ -35,6 +35,9 @@ const Testimonials = () => {
           }
           .h2 {
             margin-bottom: 20px;
+          }
+          .overflow-y-auto {
+            max-height: 400px; /* Adjust as needed */
           }
         }
       `}</style>
