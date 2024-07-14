@@ -21,7 +21,7 @@ const Testimonials = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex-grow overflow-y-auto md:overflow-y-hidden scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary"
+          className="flex-grow overflow-y-auto scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary"
         >
           <TestimonialSlider />
         </motion.div>
@@ -32,12 +32,13 @@ const Testimonials = () => {
           .container {
             padding-top: 20px;
             margin-top: -60px;
+            padding-bottom: 100px; /* Adjust this to add space for social media icons */
           }
           .h2 {
             margin-bottom: 20px;
           }
-          .overflow-y-auto {
-            max-height: 400px; /* Adjust as needed */
+          .flex-grow {
+            padding-bottom: 100px; /* Additional space to prevent overlap */
           }
         }
       `}</style>
