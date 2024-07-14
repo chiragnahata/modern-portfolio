@@ -4,10 +4,7 @@ import { fadeIn } from "../../variants";
 
 const Testimonials = () => {
   return (
-    <div className="h-full bg-primary/30 py-32 text-center relative">
-      {/* Spacer div for mobile */}
-      <div className="h-[100px] md:h-0 xl:h-0"></div>
-      
+    <div className="h-full bg-primary/30 py-32 text-center">
       <div className="container mx-auto h-full flex flex-col justify-center">
         <motion.h2
           variants={fadeIn("up", 0.2)}
@@ -33,7 +30,11 @@ const Testimonials = () => {
       <style jsx>{`
         @media (max-width: 767px) {
           .container {
-            padding-top: 60px;
+            padding-top: 20px;
+            margin-top: -60px;
+          }
+          .h2 {
+            margin-bottom: 20px;
           }
         }
       `}</style>
