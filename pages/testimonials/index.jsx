@@ -30,9 +30,9 @@ const Testimonials = () => {
       <style jsx>{`
         @media (max-width: 767px) {
           .container {
-            padding-top: 20px;
-            margin-top: -60px;
-            padding-bottom: 100px; /* Adjust this to add space for social media icons */
+            padding-top: 60px; /* Increased padding to ensure space from header */
+            margin-top: 0; /* Reset margin-top */
+            padding-bottom: 100px; /* Space for social media icons */
           }
           .h2 {
             margin-bottom: 20px;
