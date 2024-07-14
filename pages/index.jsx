@@ -14,7 +14,7 @@ const Home = () => {
       <div className="relative z-10 w-full h-full">
         {/* text */}
         <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-          <div className="text-center flex flex-col justify-center pt-40 md:pt-48 xl:pt-56 xl:text-left h-full container mx-auto px-4">
+          <div className="text-center flex flex-col justify-center pt-32 md:pt-40 xl:pt-40 xl:text-left h-full container mx-auto px-4">
             {/* title */}
             <motion.h1
               variants={fadeIn("down", 0.2)}
@@ -33,7 +33,7 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-sm md:text-base max-w-sm md:max-w-md xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-12"
+              className="text-sm md:text-base max-w-sm md:max-w-md xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-16"
             >
               Hello there! 👋 I'm Chirag Nahata, a versatile developer on a perpetual journey of coding exploration. 
               From crafting robust software solutions to diving into the latest technologies, my work is a canvas reflecting my passion for innovation. 
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
         
         {/* image */}
-        <div className="w-full h-[50vh] md:h-[60vh] xl:h-full absolute right-0 bottom-0">
+        <div className="w-full h-[40vh] md:h-[50vh] xl:w-[1280px] xl:h-full absolute right-0 bottom-0">
           {/* particles */}
           <ParticlesContainer />
 
@@ -66,9 +66,11 @@ const Home = () => {
             animate="show"
             exit="hidden"
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="w-full h-full max-w-[300px] md:max-w-[450px] xl:max-w-[737px] max-h-[300px] md:max-h-[450px] xl:max-h-[678px] absolute bottom-0 left-1/2 transform -translate-x-1/2 xl:left-auto xl:right-[8%] xl:translate-x-0"
+            className="w-full h-full absolute bottom-0 left-1/2 transform -translate-x-1/2 xl:left-auto xl:right-[8%] xl:translate-x-0"
           >
-            <Avatar />
+            <div className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0">
+              <Avatar />
+            </div>
           </motion.div>
         </div>
       </div>
