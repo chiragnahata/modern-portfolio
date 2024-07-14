@@ -1,53 +1,34 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import { fadeIn } from "../variants";
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
   return (
-    <div className="bg-primary/60 min-h-screen relative overflow-hidden">
-      {/* Header (only for mobile) */}
-      {isMobile && (
-        <header className="bg-primary/80 backdrop-blur-sm p-4 sticky top-0 z-50">
-          <h1 className="text-2xl font-bold text-white">Chirag Nahata</h1>
-        </header>
-      )}
-
-      {/* Main content */}
-      <div className="w-full min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10 relative z-10">
-        <div className="text-center flex flex-col justify-center pt-20 md:pt-40 px-4 md:px-0 md:text-left h-full container mx-auto">
-          {/* Title */}
+    <div className="bg-primary/60 min-h-screen">
+      {/* text */}
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+        <div className="text-center flex flex-col justify-center pt-20 md:pt-32 xl:pt-40 xl:text-left h-full container mx-auto px-4">
+          {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-3xl md:text-4xl xl:text-5xl font-bold mb-4"
           >
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* subtitle */}
           <motion.p
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm md:max-w-xl mx-auto md:mx-0 mb-10 text-sm md:text-base"
+            className="text-sm md:text-base max-w-sm md:max-w-md xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-12"
           >
             Hello there! 👋 I'm Chirag Nahata, a versatile developer on a perpetual journey of coding exploration. 
             From crafting robust software solutions to diving into the latest technologies, my work is a canvas reflecting my passion for innovation. 
@@ -55,47 +36,40 @@ const Home = () => {
             Join me in the exciting world of code, where every project tells a story of growth and collaboration.
           </motion.p>
 
-          {/* Projects button */}
+          {/* btn */}
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex justify-center md:justify-start"
+            className="flex justify-center xl:justify-start"
           >
             <ProjectsBtn />
           </motion.div>
         </div>
       </div>
-
-      {/* Background elements */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none">
-        {/* Background image */}
+      {/* image */}
+      <div className="w-full h-[50vh] md:h-[60vh] xl:h-full absolute right-0 bottom-0">
+        {/* bg img */}
         <div
           role="img"
-          className="bg-explosion bg-cover bg-center md:bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 opacity-30 md:opacity-100"
+          className="bg-none md:bg-explosion bg-cover bg-center xl:bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
           aria-hidden
         />
 
-        {/* Particles */}
-        <div className="absolute inset-0">
-          <ParticlesContainer />
-        </div>
+        {/* particles */}
+        <ParticlesContainer />
 
-        {/* Avatar */}
+        {/* avatar */}
         <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="absolute w-full max-w-[320px] md:max-w-[737px] bottom-0 left-1/2 transform -translate-x-1/2 md:left-auto md:right-[8%] md:translate-x-0"
+          className="w-full h-full max-w-[300px] md:max-w-[450px] xl:max-w-[737px] max-h-[300px] md:max-h-[450px] xl:max-h-[678px] absolute bottom-0 left-1/2 transform -translate-x-1/2 xl:left-auto xl:right-[8%] xl:translate-x-0"
         >
-          <div className="w-full pb-[100%] md:pb-[92%] relative">
-            <div className="absolute inset-0">
-              <Avatar />
-            </div>
-          </div>
+          <Avatar />
         </motion.div>
       </div>
     </div>
