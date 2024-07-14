@@ -21,7 +21,7 @@ const Testimonials = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex-grow overflow-y-auto scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary"
+          className="flex-grow"
         >
           <TestimonialSlider />
         </motion.div>
@@ -38,7 +38,7 @@ const Testimonials = () => {
             margin-bottom: 20px;
           }
           .flex-grow {
-            padding-bottom: 100px; /* Additional space to prevent overlap */
+            overflow: hidden; /* Remove scrollability */
           }
         }
       `}</style>
