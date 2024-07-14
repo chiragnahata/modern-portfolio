@@ -47,10 +47,24 @@ const TestimonialSlider = () => {
       }}
       modules={[Navigation, Pagination]}
       className="h-[400px]"
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+      }}
     >
       {testimonialData.map((person, i) => (
         <SwiperSlide key={i}>
-          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-4 md:px-16">
             {/* avatar, name, position */}
             <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
               <div className="flex flex-col justify-center text-center">
@@ -80,12 +94,12 @@ const TestimonialSlider = () => {
               <div className="mb-4">
                 <FaQuoteLeft
                   className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0"
-                  aria-aria-hidden
+                  aria-hidden="true"
                 />
               </div>
 
               {/* message */}
-              <div className="xl:text-lg text-center md:text-left">
+              <div className="xl:text-lg text-center md:text-left overflow-y-auto md:overflow-y-visible h-[150px] md:h-auto">
                 {person.message}
               </div>
             </div>
