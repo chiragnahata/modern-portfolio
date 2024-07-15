@@ -21,7 +21,6 @@ const Home = () => {
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
           </motion.h1>
-
           {/* subtitle */}
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -35,9 +34,8 @@ const Home = () => {
             As a Full Stack Developer, Hackathon Enthusiast, Founder of Team codeARC and Digidenone, Entrepreneur, and Researcher, I bring a blend of creativity, efficiency, and commitment to lifelong learning. 
             Join me in the exciting world of code, where every project tells a story of growth and collaboration.
           </motion.p>
-
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-10">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -59,10 +57,8 @@ const Home = () => {
           className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
           aria-hidden
         />
-
         {/* particles */}
         <ParticlesContainer />
-
         {/* avatar */}
         <motion.div
           variants={fadeIn("up", 0.5)}
