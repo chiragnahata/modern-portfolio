@@ -91,7 +91,7 @@ export const aboutData = [
     ],
   },
   {
-    title: "credentials",
+    title: "Certificates",
     info: [
       {
         title: "CCSF Course Completion Badge - CyberDojo : The School of CyberDefense",
