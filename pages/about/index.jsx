@@ -134,8 +134,14 @@ const About = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  const mobileStyles = isMobile ? {
+    height: '100vh',
+    overflowY: 'scroll',
+    WebkitOverflowScrolling: 'touch'
+  } : {};
+
   return (
-    <div className={`min-h-screen bg-primary/30 py-32 text-center xl:text-left overflow-hidden ${isMobile ? 'mobile-scrollable' : ''}`}>
+    <div className="min-h-screen bg-primary/30 py-32 text-center xl:text-left overflow-hidden" style={mobileStyles}>
       <Circles />
 
       {/* avatar img */}
