@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import { HiArrowRight } from "react-icons/hi2";
 
 const ProjectsBtn = () => {
@@ -21,6 +20,8 @@ const ProjectsBtn = () => {
           className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300"
           aria-hidden
         />
+        <span className="sr-only">Go to Projects</span>
+        <div className="absolute inset-0" aria-hidden="true" />
       </Link>
     </div>
   );
