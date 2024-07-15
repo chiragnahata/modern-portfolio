@@ -34,14 +34,22 @@ const About = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  // Inline styles for the root div to ensure it's scrollable on mobile
+  const rootStyles = {
+    minHeight: '100vh',
+    overflowY: 'auto',
+    overflowX: 'hidden',
+    WebkitOverflowScrolling: 'touch',
+  };
+
   return (
-    <div className="bg-primary/30">
+    <div className="bg-primary/30" style={rootStyles}>
       <Circles />
 
-      <div className={`container mx-auto ${isMobile ? 'py-32' : 'min-h-screen py-32'}`}>
-        <div className={`flex flex-col ${isMobile ? '' : 'xl:flex-row'} gap-x-6`}>
+      <div className="container mx-auto py-32">
+        <div className={`flex flex-col ${isMobile ? 'h-auto' : 'xl:flex-row xl:h-[80vh]'} gap-x-6`}>
           {/* text and counters */}
-          <div className={`flex-1 flex flex-col justify-center ${isMobile ? 'mb-8' : 'xl:mb-0'}`}>
+          <div className="flex-1 flex flex-col justify-center mb-8 xl:mb-0">
             <motion.h2
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -78,7 +86,8 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className={`flex flex-col w-full ${isMobile ? '' : 'xl:max-w-[48%]'} ${isMobile ? 'h-auto' : 'h-[480px]'} overflow-y-auto`}
+            className={`flex flex-col w-full ${isMobile ? 'h-auto' : 'xl:max-w-[48%] xl:h-full'} overflow-y-auto`}
+            style={{ maxHeight: isMobile ? 'none' : '80vh' }}
           >
             <div className="flex flex-wrap gap-x-4 gap-y-2 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemI) => (
@@ -95,7 +104,7 @@ const About = () => {
               ))}
             </div>
 
-            <div className={`py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start ${isMobile ? 'overflow-y-auto' : ''}`}>
+            <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
               {aboutData[index].info.map((item, itemI) => (
                 <div
                   key={itemI}
