@@ -1,4 +1,1 @@
-<svg width="300" height="50" viewBox="0 0 300 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <text x="10" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">CHIRAG</text>
-  <text x="130" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FF0000">NAHATA</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="50" fill="none" viewBox="0 0 300 50"><text x="10" y="35" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">CHIRAG</text><text x="130" y="35" fill="red" font-family="Arial, sans-serif" font-size="28" font-weight="bold">NAHATA</text></svg>
