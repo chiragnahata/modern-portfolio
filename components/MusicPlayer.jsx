@@ -48,7 +48,7 @@ const MusicPlayer = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-8 right-[380px] z-40 bg-gradient-to-r from-purple-500/80 to-pink-500/80 backdrop-blur-sm text-white px-4 py-3 rounded-lg border border-purple-400/30 hover:border-purple-400 transition-all shadow-lg hidden xl:flex items-center gap-2 text-sm"
+        className="fixed bottom-8 right-[100px] z-40 bg-gradient-to-r from-purple-500/80 to-pink-500/80 backdrop-blur-sm text-white px-4 py-3 rounded-lg border border-purple-400/30 hover:border-purple-400 transition-all shadow-lg hidden xl:flex items-center gap-2 text-sm"
       >
         <RiMusicLine className="text-xl" />
         <span>Music</span>
@@ -64,7 +64,7 @@ const MusicPlayer = () => {
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-24 right-[120px] z-40 w-[320px] bg-gradient-to-br from-purple-900/95 to-pink-900/95 backdrop-blur-xl rounded-2xl border border-purple-400/30 shadow-2xl overflow-hidden"
+            className="fixed bottom-24 right-8 z-40 w-[320px] bg-gradient-to-br from-purple-900/95 to-pink-900/95 backdrop-blur-xl rounded-2xl border border-purple-400/30 shadow-2xl overflow-hidden"
           >
             {/* Header */}
             <div className="p-4 flex items-center justify-between border-b border-white/10">

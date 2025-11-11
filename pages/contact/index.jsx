@@ -5,7 +5,7 @@ import ContactForm from "../../components/ContactForm";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-primary/30 py-32">
+    <div className="min-h-screen bg-primary/30 py-32 overflow-y-auto">
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div

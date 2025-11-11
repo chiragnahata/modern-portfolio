@@ -27,6 +27,7 @@ import {
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
+import Avatar3D from "../../components/Avatar3D";
 import Circles from "../../components/Circles";
 import GitHubStats from "../../components/GitHubStats";
 import FloatingTechStack from "../../components/FloatingTechStack";
@@ -190,23 +191,23 @@ const About = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-primary/30 py-32 text-center xl:text-left overflow-hidden ${isMobile ? 'mobile-scrollable' : ''}`}>
+    <div className={`min-h-screen bg-primary/30 py-32 pb-24 text-center xl:text-left overflow-y-auto ${isMobile ? 'mobile-scrollable' : ''}`}>
       <Circles />
 
-      {/* avatar img */}
+      {/* 3D avatar */}
       {!isMobile && (
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="hidden xl:flex absolute bottom-0 -left-[370px]"
+          className="hidden xl:flex absolute bottom-0 -left-[370px] w-[500px] h-[600px]"
         >
-          <Avatar />
+          <Avatar3D className="w-full h-full" fallback={true} />
         </motion.div>
       )}
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto px-4 xl:px-8 h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center mb-8 xl:mb-0">
           <motion.h2
@@ -216,7 +217,7 @@ const About = () => {
             exit="hidden"
             className="h2 text-3xl md:text-4xl xl:text-5xl mb-4"
           >
-            Innovation through <span className="text-accent">code & research</span>.
+            Innovation through <span className="text-accent">code & research</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -238,7 +239,7 @@ const About = () => {
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
-            className="flex flex-wrap justify-center xl:justify-start gap-x-4 gap-y-6 mb-12"
+            className="flex flex-wrap justify-center xl:justify-start gap-x-4 gap-y-6 mb-8"
           >
             {/* experience */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[120px] mb-4 xl:mb-0">
@@ -286,9 +287,9 @@ const About = () => {
             variants={fadeIn("right", 0.7)}
             initial="hidden"
             animate="show"
-            className="mb-12"
+            className="mb-8 w-full"
           >
-            <h3 className="text-xl font-bold mb-6 text-accent">Tech Stack</h3>
+            <h3 className="text-xl font-bold mb-4 text-accent">Tech Stack</h3>
             <FloatingTechStack />
           </motion.div>
         </div>
@@ -299,7 +300,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-y-auto"
+          className="flex flex-col w-full xl:max-w-[48%] max-h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-accent/50 scrollbar-track-white/5"
         >
           <div className="flex flex-wrap gap-x-4 gap-y-2 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemI) => (

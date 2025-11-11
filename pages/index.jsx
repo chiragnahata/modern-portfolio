@@ -16,17 +16,17 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary/60 min-h-screen overflow-y-auto">
       {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto px-4 xl:px-0">
+      <div className="w-full min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left min-h-screen container mx-auto px-4 xl:px-0">
           {/* Animated greeting */}
           <motion.div
             variants={fadeIn("down", 0.1)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-accent text-sm md:text-base font-semibold mb-2"
+            className="text-accent text-sm md:text-base font-semibold mb-4 mt-20 xl:mt-0"
           >
             👋 Welcome to my portfolio
           </motion.div>
@@ -39,8 +39,7 @@ const Home = () => {
             exit="hidden"
             className="h1 text-3xl md:text-4xl xl:text-[54px] xl:leading-[1.3]"
           >
-            Building The Future <br /> With{" "}
-            <span className="text-accent">AI & Innovation</span>
+            Building The Future <br /> With <span className="text-accent">AI & Innovation</span>
           </motion.h1>
 
           {/* Typing animation for roles */}

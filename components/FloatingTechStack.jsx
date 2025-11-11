@@ -43,7 +43,7 @@ const skills = [
 
 const FloatingTechStack = () => {
   return (
-    <div className="flex flex-wrap gap-4 justify-center xl:justify-start">
+    <div className="flex flex-wrap gap-3 justify-center xl:justify-start max-w-full">
       {skills.map((skill, index) => {
         const IconComponent = skill.icon;
         
@@ -53,18 +53,18 @@ const FloatingTechStack = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.05 }}
-            whileHover={{ y: -10, scale: 1.1 }}
+            whileHover={{ y: -8, scale: 1.08 }}
             className="group relative"
           >
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-accent/50 transition-all duration-300">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 border border-white/10 hover:border-accent/50 transition-all duration-300">
               <IconComponent 
-                className="text-4xl transition-all duration-300" 
+                className="text-3xl transition-all duration-300" 
                 style={{ color: skill.color }}
               />
             </div>
             
             {/* Tooltip */}
-            <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
               <span className="text-xs text-white/80 bg-black/80 px-2 py-1 rounded">
                 {skill.name}
               </span>

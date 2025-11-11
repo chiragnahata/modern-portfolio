@@ -9,11 +9,9 @@ import ScrollProgress from "../components/ScrollProgress";
 import ThemeToggle from "../components/ThemeToggle";
 import CommandPalette from "../components/CommandPalette";
 import BackToTop from "../components/BackToTop";
-import ViewCounter from "../components/ViewCounter";
 import LiveChat from "../components/LiveChat";
 import InteractiveTerminal from "../components/InteractiveTerminal";
 import KeyboardShortcuts from "../components/KeyboardShortcuts";
-import MusicPlayer from "../components/MusicPlayer";
 import SpotifyPlayer from "../components/SpotifyPlayer";
 
 import "../styles/globals.css";
@@ -42,18 +40,16 @@ function MyApp({ Component, pageProps }) {
       <CustomCursor />
       <ScrollProgress />
       <ThemeToggle />
-      <ViewCounter />
       <CommandPalette />
       <BackToTop />
       <LiveChat />
       <InteractiveTerminal />
       <KeyboardShortcuts />
-      <MusicPlayer />
       <SpotifyPlayer />
       
       <Layout>
         <AnimatePresence mode="wait">
-          <motion.div key={router.route} className="h-full">
+          <motion.div key={router.route} className="min-h-screen">
             <Transition />
             <Component {...pageProps} />
           </motion.div>

@@ -5,10 +5,10 @@ import AchievementsShowcase from "../../components/AchievementsShowcase";
 
 const Achievements = () => {
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="min-h-screen bg-primary/30 py-32 text-center xl:text-left overflow-y-auto">
       <Circles />
 
-      <div className="container mx-auto h-full flex flex-col justify-center">
+      <div className="container mx-auto px-4 h-full flex flex-col justify-center">
         {/* Page Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

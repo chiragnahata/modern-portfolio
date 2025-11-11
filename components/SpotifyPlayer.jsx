@@ -7,10 +7,10 @@ const SpotifyPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   // Your Spotify playlist/profile
-  const spotifyProfile = "chiragnahata"; // Your Spotify username
-  const playlistId = "37i9dQZF1DXcBWIGoYBM5M"; // Replace with your actual playlist ID from Spotify URL
-  // To get your playlist ID: Open Spotify > Right-click on your playlist > Share > Copy link
-  // The ID is the last part of the URL after /playlist/
+  const spotifyProfile = "70ph7fb9dd2flamitr2wh8udk"; // Your Spotify username
+  const playlistId = "4xEd8462dtvVuUpQ6ZKQhx"; // Your actual playlist ID from Spotify URL
+  // Playlist: https://open.spotify.com/playlist/4xEd8462dtvVuUpQ6ZKQhx
+  // Profile: https://open.spotify.com/user/70ph7fb9dd2flamitr2wh8udk
   
   const topTracks = [
     { name: "Blinding Lights", artist: "The Weeknd", album: "After Hours" },
@@ -26,7 +26,7 @@ const SpotifyPlayer = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-8 left-[200px] z-40 bg-[#1DB954] hover:bg-[#1ed760] text-white px-4 py-3 rounded-lg shadow-lg hidden xl:flex items-center gap-2 transition-all text-sm font-semibold"
+        className="fixed bottom-8 left-[180px] z-40 bg-[#1DB954] hover:bg-[#1ed760] text-white px-4 py-3 rounded-lg shadow-lg hidden xl:flex items-center gap-2 transition-all text-sm font-semibold"
       >
         <RiSpotifyFill className="text-xl" />
         <span>My Playlist</span>
