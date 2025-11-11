@@ -15,29 +15,34 @@ import "swiper/css/pagination";
 
 const serviceData = [
   {
-    Icon: RxCrop,
-    title: "Web Development",
-    description: "Creating visually appealing, responsive, and functional websites, ensuring a seamless user experience across all devices..",
-  },
-  {
-    Icon: RxPencil2,
-    title: "Software Development",
-    description: "Building customized software solutions to streamline operations, improve efficiency.",
-  },
-  {
     Icon: RxDesktop,
-    title: "IT Solutions",
-    description: "Offering a wide range of IT services, including freelance work, server management, and technical support to optimize your business operations",
-  },
-  {
-    Icon: RxReader,
-    title: "Social Media Marketing and Management",
-    description: "Crafting effective social media strategies, managing online presence, and boosting brand awareness.",
+    title: "Full Stack Development",
+    description: "Building scalable web and mobile applications using React, Node.js, Laravel, Flutter, and modern tech stacks with focus on performance and user experience.",
   },
   {
     Icon: RxRocket,
-    title: "Content Creation",
-    description: "Creating captivating and tailored content across platforms to engage and inspire audience.",
+    title: "AI & Machine Learning",
+    description: "Developing intelligent systems using TensorFlow, PyTorch, and computer vision. Expertise in NLP, deep learning, and AI-powered product development.",
+  },
+  {
+    Icon: RxCrop,
+    title: "Cybersecurity Solutions",
+    description: "Creating security analysis tools, digital forensics platforms, and secure coding solutions. Building systems that protect critical data and infrastructure.",
+  },
+  {
+    Icon: RxPencil2,
+    title: "Technical Leadership",
+    description: "Leading cross-functional teams, architecting enterprise solutions, and mentoring developers. Proven track record in startup and team management.",
+  },
+  {
+    Icon: RxReader,
+    title: "Research & Innovation",
+    description: "Conducting cutting-edge research in AI/ML with 6 granted patents and 3 published papers. Transforming theoretical concepts into practical solutions.",
+  },
+  {
+    Icon: RxRocket,
+    title: "Product Development",
+    description: "End-to-end product strategy from ideation to deployment. Building SaaS platforms, VS Code extensions, and enterprise-grade applications.",
   },
 ];
 

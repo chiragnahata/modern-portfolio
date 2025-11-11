@@ -22,7 +22,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              My expertise <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -31,7 +31,9 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              I offer comprehensive solutions. With a focus on innovation and efficiency, I strive to deliver solutions that enhance digital presence, streamline operations, and drive business growth.
+              From architecting AI-powered platforms to leading technical teams, 
+              I offer comprehensive solutions across the full software development lifecycle. 
+              With expertise in Full Stack, ML, and Cybersecurity, I transform complex challenges into elegant, scalable solutions.
             </motion.p>
           </div>
 

@@ -4,12 +4,27 @@ import {
   RiYoutubeLine,
   RiInstagramLine,
   RiFacebookLine,
-  RiDribbbleLine,
+  RiLinkedinLine,
   RiGithubLine,
-  RiPinterestLine,
+  RiTwitterXLine,
 } from "react-icons/ri";
 
 export const socialData = [
+  {
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/chirag-nahata",
+    Icon: RiLinkedinLine,
+  },
+  {
+    name: "GitHub",
+    link: "https://github.com/chiragnahata",
+    Icon: RiGithubLine,
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/chiragnahata",
+    Icon: RiTwitterXLine,
+  },
   {
     name: "YouTube",
     link: "https://youtube.com/@ChiragNahata",
@@ -19,16 +34,6 @@ export const socialData = [
     name: "Instagram",
     link: "https://instagram.com/chiragnahata05",
     Icon: RiInstagramLine,
-  },
-  {
-    name: "Facebook",
-    link: "https://facebook.com/chiragnahata05",
-    Icon: RiFacebookLine,
-  },
-  {
-    name: "Github",
-    link: "https://github.com/chiragnahata",
-    Icon: RiGithubLine,
   },
 ];
 
@@ -43,7 +48,7 @@ const Socials = () => {
           target="_blank"
           rel="noreferrer noopener"
           className={`${
-            social.name === "Github"
+            social.name === "LinkedIn"
               ? "bg-accent rounded-full p-[5px] hover:text-white"
               : "hover:text-accent"
           } transition-all duration-300`}

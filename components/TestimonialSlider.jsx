@@ -9,32 +9,32 @@ import "swiper/css/pagination";
 
 const testimonialData = [
   {
-    image: "/Snigdha.png",
-    name: "Snigdha Ghosh",
-    position: "Friend",
-    message:
-      "Chirag Nahata excels in coding, solving complex problems, and actively engages in competitions and open-source projects, showcasing growth and teamwork.",
-  },
-  {
     image: "/Sitanath.png",
     name: "Dr. Sitanath Biswas",
-    position: "Teacher/Mentor",
+    position: "Professor & Mentor",
     message:
-      "He is one of the brightest students, I have seen in my career. He has diverse skill set including web development, AI, ML etc. I strongly recommend him as a potential candidate for internship.",
+      "He is one of the brightest students I have seen in my career. He has a diverse skill set including web development, AI, ML, and more. His ability to lead teams and manage complex projects is exceptional. I strongly recommend him as a potential candidate for any technical role or internship.",
+  },
+  {
+    image: "/Snigdha.png",
+    name: "Snigdha Ghosh",
+    position: "Colleague & Friend",
+    message:
+      "Chirag Nahata excels in coding and solving complex problems. He actively engages in competitions, hackathons, and open-source projects, showcasing remarkable growth and exceptional teamwork. His dedication to learning and innovation is truly inspiring.",
   },
   {
     image: "/Shamonnoy.png",
     name: "Shamonnoy Halder",
-    position: "Friend",
+    position: "Developer & Friend",
     message:
-      "Chirag is a very curious person in the field of learning and implementing something.",
+      "Chirag is a very curious person in the field of learning and implementing something new. His passion for technology and his ability to quickly adapt to new frameworks and tools is remarkable. He's always pushing boundaries.",
   },
   {
     image: "/Bidipta.png",
     name: "Bidipta Ghosh",
-    position: "Friend",
+    position: "Childhood Friend",
     message:
-      "Chirag is my childhood friend. He is a very skillful boy having ideas regarding demanding computer languages in the market. He is outstanding in coding and achieves everything he makes his mind for.",
+      "Chirag is my childhood friend. He is a very skillful person with deep knowledge of demanding computer languages in the market. He is outstanding in coding, problem-solving, and achieves everything he sets his mind to. His entrepreneurial spirit is admirable.",
   },
 ];
 

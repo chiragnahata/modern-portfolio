@@ -7,16 +7,32 @@ import {
   FaHtml5,
   FaJs,
   FaReact,
+  FaJava,
+  FaNodeJs,
+  FaDocker,
+  FaAws,
+  FaGitAlt,
 } from "react-icons/fa";
 import {
   SiAdobephotoshop,
   SiAdobexd,
   SiFramer,
   SiNextdotjs,
+  SiTensorflow,
+  SiPytorch,
+  SiMongodb,
+  SiMysql,
+  SiFlutter,
+  SiLaravel,
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
+import GitHubStats from "../../components/GitHubStats";
+import FloatingTechStack from "../../components/FloatingTechStack";
+import StatsCounter from "../../components/StatsCounter";
+import GlassmorphicCard from "../../components/GlassmorphicCard";
+import InteractiveResume from "../../components/InteractiveResume";
 import { fadeIn } from "../../variants";
 
 //  data
@@ -25,31 +41,62 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          FaHtml5,
-          FaCss3,
-          FaJs,
-          FaReact,
-          FaPython,
-        ],
+        title: "Languages",
+        icons: [FaPython, FaJs, FaHtml5, FaCss3, FaReact],
+        stage: "Python, Java, JavaScript, C++, PHP, SQL",
       },
       {
-        title: "UI/UX Design",
-        icons: [SiAdobephotoshop],
+        title: "AI/ML",
+        icons: [SiTensorflow, SiPytorch],
+        stage: "TensorFlow, PyTorch, Scikit-learn, OpenCV, NLP",
+      },
+      {
+        title: "Web & Mobile",
+        icons: [FaReact, SiNextdotjs, FaNodeJs, SiFlutter, SiLaravel],
+        stage: "React.js, Next.js, Node.js, Laravel, Flutter",
+      },
+      {
+        title: "DevOps & Cloud",
+        icons: [FaAws, FaDocker, FaGitAlt],
+        stage: "AWS, Docker, Git, Linux, Cybersecurity",
+      },
+      {
+        title: "Databases",
+        icons: [SiMongodb, SiMysql],
+        stage: "MySQL, MongoDB, PostgreSQL, Firebase",
       },
     ],
   },
   {
-    title: "awards",
+    title: "github",
+    component: "GitHubStats",
+  },
+  {
+    title: "patents",
     info: [
       {
-        title: "JISTech 2K23 - 1st Position in App-E-Teaser Competition",
-        stage: "November 2023",
+        title: "Self-Deploying Rescue Airbag System for Miners",
+        stage: "Patent No. 202531035777 A - Apr 2025",
       },
       {
-        title: "2nd Runner Up Track 3 Certificate of Appreciation, Trithon Trident 2023, Bhubheswar - Rs 12500",
-        stage: "December 2023",
+        title: "Adaptive Learning Companion Device",
+        stage: "Patent No. 202531001611 A - Jan 2025",
+      },
+      {
+        title: "Thermal Imaging Based Attendance Monitoring System",
+        stage: "Patent No. 202431088758 A - Nov 2024",
+      },
+      {
+        title: "Advanced Intelligent Commode with Integrated Wash Basin",
+        stage: "Patent No. 202431086521 A - Nov 2024",
+      },
+      {
+        title: "Wearable Digital Posture Corrector with ML Personalization",
+        stage: "Patent No. 202431085561 A - Sep 2024",
+      },
+      {
+        title: "Sustainable Waste Management System",
+        stage: "Patent No. 202431065333 A - Sep 2024",
       },
     ],
   },
@@ -57,65 +104,73 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Frontend Developer - CodeAplha",
-        stage: "July 2024 - Present",
-      },
-      {
-        title: "Full Stack Development Intern, Campus Ambassador & Tech Defenders Club President - CyberDojo : The School of CyberDefense",
-        stage: "May 2024 - Present",
-      },
-      {
-        title: "Co-Founder & CEO - Digidenone",
-        stage: "April 2024 - Present",
+        title: "Co-Founder, CEO & CTO - Digidenone",
+        stage: "Apr 2024 - Present",
       },
       {
         title: "Founder & Team Leader - Team codeARC",
-        stage: "December 2023 - Present",
+        stage: "Dec 2023 - Present",
       },
       {
-        title: "Internshala Student Partner - Internshala",
-        stage: "June 2024 - July 2024",
+        title: "President - Tech Defenders Club at CyberDojo",
+        stage: "May 2024 - Present",
       },
       {
-        title: "Sales & Marketing Intern - Skill Academia",
-        stage: "May 2024 - June 2024",
+        title: "Frontend Developer - CodeAlpha",
+        stage: "Jul 2024 - Present",
       },
       {
-        title: "Internship on Machine Learning - Centre For Advanced Computer Learning and Development | CACLD",
-        stage: "February 2024 - March 2024",
+        title: "Full Stack Development Intern - CyberDojo",
+        stage: "May 2024 - Present",
       },
       {
-        title: "Digital Marketing Course Trainer - GANDHI INSTITUTE FOR TECHNOLOGY[GIFT] , BHUBANESWAR",
-        stage: "February 2024 - March 2024",
+        title: "Digital Marketing Trainer - GIFT, Bhubaneswar",
+        stage: "Feb 2024 - Mar 2024",
+      },
+      {
+        title: "ML Intern - CACLD",
+        stage: "Feb 2024 - Mar 2024",
+      },
+      {
+        title: "Campus Ambassador - Internshala & CyberDojo",
+        stage: "Various Terms",
       },
     ],
   },
   {
-    title: "Certificates",
+    title: "awards",
     info: [
       {
-        title: "CCSF Course Completion Badge - CyberDojo : The School of CyberDefense",
-        stage: "April 2024",
+        title: "Elite Silver Rank - NPTEL Programming in Java",
+        stage: "Top Performers Category",
       },
       {
-        title: "Certificate of Achievement - The Dark Pattern Busters Hackathon 2023 - Indian Institute of Technology (Banaras Hindu University), Varanasi",
-        stage: "March 2024",
+        title: "Lead Organizer - InnovoCon Hackathon",
+        stage: "500+ participants, 2024",
       },
       {
-        title: "Certificate of Participation in HackForge : Forging the Future of Srijan 2024 - Unstop",
-        stage: "March 2024",
+        title: "1st Position Winner - JISTech 2K23 App-E-Teaser",
+        stage: "JIS College of Engineering",
       },
       {
-        title: "2nd Runner Up Track 3 Certificate of Appreciation, Trithon Trident 2023, Bhubheswar - Trident Groups of Institutions",
-        stage: "December 2023",
+        title: "2nd Runner Up Track 3 - Trithon Trident 2023",
+        stage: "Rs 12,500 Prize",
       },
       {
-        title: "JISTech 2K23 : 1st Position in App-E-Teaser Competition - JIS College of Engineering",
-        stage: "November 2023",
+        title: "SSIP Gujarat Hackathon 2023",
+        stage: "Regional Round Qualified",
       },
       {
-        title: "SSIP Gujarat Hackthon 2023 Regional Round Participation Certificate - SSIP Gujarat",
-        stage: "November 2023",
+        title: "15+ Hackathon Participations",
+        stage: "Multiple Wins & Recognitions",
+      },
+      {
+        title: "3 Published Research Papers",
+        stage: "AI/ML & Computer Vision",
+      },
+      {
+        title: "Guinness World Record Participant",
+        stage: "Most People Washing Hands Online",
       },
     ],
   },
@@ -161,8 +216,7 @@ const About = () => {
             exit="hidden"
             className="h2 text-3xl md:text-4xl xl:text-5xl mb-4"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Innovation through <span className="text-accent">code & research</span>.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -170,7 +224,13 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-sm md:text-base"
           >
-            I'm Chirag Nahata, a passionate Full Stack Developer and entrepreneur driven by a relentless pursuit of innovation. I have a knack for crafting robust software, I thrive on creating impactful digital experiences. As the founder of Digidenone and Team codeARC, I'm dedicated to pushing the boundaries of technology and fostering growth through collaborative projects. Let's connect and explore how we can shape the future together through code and creativity.
+            I'm a versatile technology leader combining entrepreneurial vision with technical excellence. 
+            From architecting AI-powered security analysis platforms to leading teams at Digidenone and Team codeARC, 
+            I bring deep expertise in Full Stack Development, Machine Learning, and Cybersecurity. 
+            My work is driven by curiosity and a commitment to creating impactful solutions—whether through 
+            6 granted patents, 3 research publications, or organizing hackathons like InnovoCon with 500+ participants. 
+            Currently pursuing dual degrees in Computer Science (AI/ML) and Data Science from IIT Madras, 
+            I'm constantly pushing boundaries to transform ideas into reality.
           </motion.p>
 
           {/* counters */}
@@ -178,47 +238,58 @@ const About = () => {
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
-            className="flex flex-wrap justify-center xl:justify-start gap-x-4 gap-y-6"
+            className="flex flex-wrap justify-center xl:justify-start gap-x-4 gap-y-6 mb-12"
           >
             {/* experience */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[120px] mb-4 xl:mb-0">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={2} duration={5} />
+                <CountUp start={0} end={3} duration={5} />+
               </div>
               <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                Years of experience.
-              </div>
-            </div>
-
-            {/* hackathons */}
-            <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[120px] mb-4 xl:mb-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={6} duration={5} />
-              </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                Hackathons Participated.
+                Years of experience
               </div>
             </div>
 
             {/* projects */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[120px] mb-4 xl:mb-0">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={12} duration={5} />
+                <CountUp start={0} end={20} duration={5} />+
               </div>
               <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                Finished projects.
+                Projects completed
               </div>
             </div>
 
-            {/* awards */}
-            <div className="relative flex-1 min-w-[120px]">
+            {/* patents */}
+            <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[120px] mb-4 xl:mb-0">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={2} duration={5} />
+                <CountUp start={0} end={6} duration={5} />
               </div>
               <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                Winning awards.
+                Granted patents
               </div>
             </div>
+
+            {/* hackathons */}
+            <div className="relative flex-1 min-w-[120px]">
+              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                <CountUp start={0} end={15} duration={5} />+
+              </div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                Hackathons participated
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Tech Stack Showcase */}
+          <motion.div
+            variants={fadeIn("right", 0.7)}
+            initial="hidden"
+            animate="show"
+            className="mb-12"
+          >
+            <h3 className="text-xl font-bold mb-6 text-accent">Tech Stack</h3>
+            <FloatingTechStack />
           </motion.div>
         </div>
 
@@ -246,26 +317,30 @@ const About = () => {
           </div>
 
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemI) => (
-              <div
-                key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
-              >
-                {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
+            {aboutData[index].component === "GitHubStats" ? (
+              <GitHubStats />
+            ) : (
+              aboutData[index].info.map((item, itemI) => (
+                <div
+                  key={itemI}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                >
+                  {/* title */}
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div>{item.stage}</div>
 
-                <div className="flex gap-x-4">
-                  {/* icons */}
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
-                    </div>
-                  ))}
+                  <div className="flex gap-x-4">
+                    {/* icons */}
+                    {item.icons?.map((Icon, iconI) => (
+                      <div key={iconI} className="text-2xl text-white">
+                        <Icon />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            )}
           </div>
         </motion.div>
       </div>

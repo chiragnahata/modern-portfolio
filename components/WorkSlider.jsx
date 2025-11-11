@@ -13,48 +13,48 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "SynapseAudit - Security Code Analysis Platform",
           path: "/thumb1.jpg",
-          link: "http://example.com",
+          link: "https://synapseaudit.digidenone.tech",
         },
         {
-          title: "title",
+          title: "GeoJlix - Geolocation Attendance System",
           path: "/thumb2.jpg",
-          link: "http://example.com",
+          link: "https://github.com/chiragnahata",
         },
         {
-          title: "title",
+          title: "EduSphere - Learning Management System",
           path: "/thumb3.jpg",
-          link: "http://example.com",
+          link: "https://github.com/chiragnahata",
         },
         {
-          title: "title",
+          title: "JISCE Department Website",
           path: "/thumb4.jpg",
-          link: "http://example.com",
+          link: "https://github.com/chiragnahata",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
+          title: "RecyCraft - Recycling Ecosystem",
           path: "/thumb4.jpg",
-          link: "http://example.com",
+          link: "https://github.com/teamcodeARC/RecyCraft",
         },
         {
-          title: "title",
+          title: "NotewAllah - Note Taking Platform",
           path: "/thumb1.jpg",
-          link: "http://example.com",
+          link: "https://github.com/chiragnahata",
         },
         {
-          title: "title",
+          title: "Anti Manipulation Brigade - AI Detector",
           path: "/thumb2.jpg",
-          link: "http://example.com",
+          link: "https://github.com/teamcodeARC/Anti-Manipulation-Brigade",
         },
         {
-          title: "title",
+          title: "J.A.R.V.I.S - Personal AI Assistant",
           path: "/thumb3.jpg",
-          link: "http://example.com",
+          link: "https://github.com/chiragnahata/jarvis-The-Personal-Assistant",
         },
       ],
     },

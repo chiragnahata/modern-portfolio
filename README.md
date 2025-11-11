@@ -1,15 +1,50 @@
 <a name="readme-top"></a>
 
-# Chirag Nahata Portfolio
+# Chirag Nahata - Modern Portfolio
 
 [![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata "Ask Me Anything!")
-[![GitHub license](https://flat.badgen.net/github/license/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/blob/main/LICENSE "GitHub license")
+[![GitHub license](https://flat.badgen.net/github/license/chiragnahata/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/blob/main/LICENSE "GitHub license")
 [![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/commits/main "Maintenance")
-[![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/branches "GitHub branches")
-[![Github commits](https://flat.badgen.net/github/commits/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/commits "Github commits")
-[![Netlify Status](https://api.netlify.com/api/v1/badges/721491f5-0b0d-4120-96bd-6bd0480ef1e5/deploy-status)](https://awersome-portfolio.netlify.app/ "Netlify Status")
-[![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/issues "GitHub issues")
-[![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/chiragnahata/modern-portfolio/pulls "GitHub pull requests")
+
+> A cutting-edge portfolio showcasing the work of Chirag Nahata - Full Stack Developer, AI Specialist, Entrepreneur, and Researcher. Featuring 6 granted patents, 3 research publications, and 20+ innovative projects.
+
+## 🚀 About Me
+
+I'm a technology leader and innovator at the intersection of AI, software engineering, and entrepreneurship. As Co-Founder & CEO of **Digidenone** and Founder of **Team codeARC**, I architect enterprise-grade AI-powered solutions that solve real-world challenges.
+
+- 🎓 Dual Degrees: B.Tech (AI/ML) & B.S. Data Science from IIT Madras
+- 💼 CEO/CTO at Digidenone, President of Tech Defenders Club
+- 🔬 6 Granted Patents | 3 Published Research Papers
+- 🏆 15+ Hackathon Participations | Lead Organizer of InnovoCon (500+ participants)
+- 💻 20+ Projects across Full Stack, AI/ML, and Cybersecurity
+
+## ✨ Portfolio Features
+
+### 🎯 Core Features
+- ⚡ Built with Next.js 14 and React 18
+- 🎨 Stunning animations with Framer Motion
+- 🎭 Interactive particle effects and 3D elements
+- 📱 Fully responsive and mobile-optimized
+- 🎯 SEO optimized for maximum visibility
+- 🌈 Modern gradient designs with Tailwind CSS
+- 📊 Dynamic content sliders with Swiper
+- 🔥 Performance optimized with Next.js
+
+### 🚀 Advanced Features
+- 🎨 **Theme Toggle**: Dark/Light/Auto modes with persistence
+- 🖱️ **Custom Cursor**: Interactive cursor with trail effects
+- 📊 **Scroll Progress**: Visual scroll indicator
+- ⌨️ **Command Palette**: Quick navigation with Cmd/Ctrl+K
+- 💬 **Typing Animation**: Dynamic role rotation on homepage
+- 📈 **GitHub Stats**: Live contribution graphs and statistics
+- 📝 **Medium Blog Integration**: Auto-fetches articles from Medium RSS
+- 👀 **View Counter**: Track portfolio visits
+- 📧 **Enhanced Contact Form**: Professional grid layout with info cards
+- 🎯 **Back to Top**: Smooth scroll navigation
+- 🏆 **Animated Counters**: Dynamic statistics display
+- 💻 **Floating Tech Stack**: Interactive technology showcase
+
+## 🛠️ Tech Stack
 
 <!-- Table of Contents -->
 <details>
@@ -39,8 +74,39 @@ Here is the folder structure of this app.
 ```bash
 modern-portfolio/
   |- components/
+    |-- Avatar.jsx
+    |-- BackToTop.jsx
+    |-- BlogCard.jsx
+    |-- Bulb.jsx
+    |-- CardLeft.jsx
+    |-- CardRight.jsx
+    |-- Circles.jsx
+    |-- CommandPalette.jsx
+    |-- ContactForm.jsx
+    |-- CustomCursor.jsx
+    |-- FloatingTechStack.jsx
+    |-- GitHubStats.jsx
+    |-- Header.jsx
+    |-- Layout.jsx
+    |-- Nav.jsx
+    |-- ParticlesContainer.jsx
+    |-- ProjectsBtn.jsx
+    |-- ScrollProgress.jsx
+    |-- ServiceSlider.jsx
+    |-- Socials.jsx
+    |-- StatsCounter.jsx
+    |-- TestimonialSlider.jsx
+    |-- ThemeToggle.jsx
+    |-- TopLeftImg.jsx
+    |-- Transition.jsx
+    |-- TypingAnimation.jsx
+    |-- ViewCounter.jsx
+    |-- WorkSlider.jsx
+  |- lib/
+    |-- medium.js
   |- pages/
     |-- about/
+    |-- blog/
     |-- contact/
     |-- services/
     |-- testimonials/
@@ -53,12 +119,20 @@ modern-portfolio/
   |- .eslintrc.json
   |- .gitignore
   |- next.config.js
-  |- package-lock.json
   |- package.json
   |- postcss.config.js
   |- tailwind.config.js
   |- variants.js
 ```
+
+## 🎯 Key Sections
+
+- **Home**: Dynamic hero section with animated introduction
+- **About**: Professional journey, skills, patents, and achievements
+- **Services**: Technical expertise and offerings
+- **Work**: Portfolio of 20+ innovative projects
+- **Testimonials**: Recommendations from mentors and colleagues
+- **Contact**: Get in touch and download resume
 
 <br />
 

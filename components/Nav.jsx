@@ -10,6 +10,7 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
+import { RiArticleLine, RiTrophyLine, RiShareBoxLine } from "react-icons/ri";
 
 // nav data
 export const navData = [
@@ -17,6 +18,9 @@ export const navData = [
   { name: "about", path: "/about", Icon: HiUser },
   { name: "services", path: "/services", Icon: HiRectangleGroup },
   { name: "work", path: "/work", Icon: HiViewColumns },
+  { name: "blog", path: "/blog", Icon: RiArticleLine },
+  { name: "achievements", path: "/achievements", Icon: RiTrophyLine },
+  { name: "social", path: "/social", Icon: RiShareBoxLine },
   {
     name: "testimonials",
     path: "/testimonials",
